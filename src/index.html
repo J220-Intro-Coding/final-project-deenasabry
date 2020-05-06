@@ -28,6 +28,8 @@
     }
     </script>
 
+
+
     <!-- Twitter Summary Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="">
@@ -55,10 +57,21 @@
         color: white;
       }
 
-      .text-center{
-        font-size: 60px;
-        font-family: 'Roboto', sans-serif;
+      #headline{
+        font-size: 80px;
+        font-family: 'Libre Caslon Text', serif;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        color: #69C9D0
       }
+
+      #subhead{
+        font-size: 17px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: lighter;
+        color: white;
+      }
+
 
       .lead{
         color: #69C9D0;
@@ -67,11 +80,12 @@
       }
 
       .stroke{
-        width: 900px;
+        width: 200px;
         height: auto;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 0px
       }
 
 
@@ -79,7 +93,9 @@
        padding-bottom: 50px; 
       }
 
-      
+       @import 
+       url('https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica&display=swap');
+
 
 
     </style>
@@ -92,9 +108,10 @@
     <!-- main banner -->
     <header role="banner" class="py-5">
 
-      <h1 class="text-center display-1" >MEMEING A PANDEMIC
+      <h1 id="headline" class="text-center display-1" > MEMEING A PANDEMIC
       </h1>
-      <p class="lead text-center">How have young people been coping with the spread of Covid-19?</p>
+
+      <p id="subhead" class="lead text-center">How young people are coping with the spread of Covid-19 </p>
 
     </header>
 
@@ -132,30 +149,46 @@
             
 
             <!-- Example of a video embed -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <video class="embed-responsive-item" muted preload playsinline controls loop>
-                <source src="https://temp-j100.s3.amazonaws.com/aidindying-background.mp4" type="video/mp4">
-                <img src="" alt="fallback">
-              </video>
-            </div>
-
+           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://media.journalism.berkeley.edu/upload/2020/05/1588749566d5dc5f6.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.journalism.berkeley.edu/upload/2020/05/1588749618c9170bf.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.journalism.berkeley.edu/upload/2020/05/15887496699e09f9e.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
             <p>Nec ullamcorper sit amet risus nullam eget felis eget. Ac placerat vestibulum lectus mauris ultrices eros. Congue nisi vitae suscipit tellus mauris a. Fermentum odio eu feugiat pretium nibh. Est ante in nibh mauris cursus mattis molestie a iaculis. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Sed cras ornare arcu dui. Lobortis mattis aliquam faucibus purus in massa tempor nec feugiat. Nam libero justo laoreet sit amet cursus. Ac tortor dignissim convallis aenean et tortor at. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nulla facilisi morbi tempus iaculis urna id volutpat. Mauris sit amet massa vitae. Eget nunc lobortis mattis aliquam faucibus purus in massa. Magna eget est lorem ipsum dolor sit. Enim eu turpis egestas pretium aenean.</p>
 
 
             <!-- Example of a YouTube Embed -->
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/yqikYLkF4jU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/lTUveqrIj6o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
 
             <p>Dolor purus non enim praesent elementum facilisis leo. Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Non blandit massa enim nec dui. Maecenas pharetra convallis posuere morbi leo urna. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. Pharetra massa massa ultricies mi. Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna. Phasellus egestas tellus rutrum tellus pellentesque eu. Amet commodo nulla facilisi nullam. Purus in mollis nunc sed id semper risus. Congue quisque egestas diam in arcu. Et sollicitudin ac orci phasellus egestas tellus.</p>
 
 
-            <!-- Example of audio player -->
-            <audio controls preload style="width:100%;">
-              <source src="something.mp3" type="audio/mp3">
-            </audio>
+           <blockquote class="twitter-tweet"><p lang="en" dir="ltr">You are cordially invited! <a href="https://t.co/35TUevbGG6">pic.twitter.com/35TUevbGG6</a></p>&mdash; Nana Kwame (@TheAbrahamAsare) <a href="https://twitter.com/TheAbrahamAsare/status/1239251048172142592?ref_src=twsrc%5Etfw">March 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
             <p>Cras fermentum odio eu feugiat pretium nibh ipsum. Dictum non consectetur a erat nam at lectus urna. Magna fermentum iaculis eu non diam phasellus vestibulum lorem sed. Proin nibh nisl condimentum id venenatis a condimentum vitae sapien. Quisque sagittis purus sit amet. Commodo viverra maecenas accumsan lacus vel facilisis. Dignissim convallis aenean et tortor at risus. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Leo duis ut diam quam nulla porttitor. Urna porttitor rhoncus dolor purus non enim praesent elementum. Dignissim suspendisse in est ante in. In massa tempor nec feugiat nisl pretium fusce.</p>
@@ -261,5 +294,6 @@
 
       });
     </script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
   </body>
 </html>
